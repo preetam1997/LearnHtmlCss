@@ -1,0 +1,87 @@
+<!DOCTYPE html><!--Hello-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - Demo FlexBox 3</title>
+        <style>
+            body{
+                padding: 2em;
+                display: flex;
+                flex-direction: row;
+            }
+            .sideBarRightItem{
+                background: hotpink;
+            }
+            .sideBarLeftItem{background: gold;}
+            .sideBarItem{flex: 1 0 0;border: 0px solid green;}
+            .mainContainer{
+                display: flex;
+                flex-direction: column;
+                flex: 3 0px;
+            }
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .content{
+                display: flex;
+                flex-direction: row;
+            }
+            .mainContentItem{
+                text-align: left;
+                background: deepskyblue;
+                flex: 3 0px;;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        <div class="mainContainer">
+            <header class="headerContainer"><h1>Header-Sample FlexBox Example</h1></header>
+            <main class="content">
+                <section class="mainContentItem">
+                    <article>
+                        <h2>First article</h2>
+                        <p>A paragraph is a series of related sentences developing a central idea, called the topic. 
+                            Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that 
+                            supports one central, unified idea.</p>
+                    </article>
+                    <article>
+                        <h2>Second article</h2>
+                        <p>A paragraph is a series of related sentences developing a central idea, called the topic. 
+                        Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that 
+                        supports one central, unified idea.</p>
+                    </article>
+                    <article>
+                        <h2>Third article</h2>
+                        <p>A paragraph is a series of related sentences developing a central idea, called the topic. 
+                            Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that 
+                            supports one central, unified idea.</p>
+                    </article>
+                </section>
+                <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+                
+            </main>
+            <footer class="footerContainer">Footer</footer>
+        </div>
+
+    </body>
+</html>
